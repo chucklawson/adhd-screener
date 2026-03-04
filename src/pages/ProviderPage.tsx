@@ -33,21 +33,14 @@ export default function ProviderPage() {
           PSYCHED
         </span>
         <nav className="hidden md:flex items-center gap-8">
-          {[
-            { label: 'Get Started Here', href: 'https://www.psychedcbus.com/get-started-here-contact' },
-            { label: 'Insurances Accepted', href: 'https://www.psychedcbus.com/insurance-accepted' },
-            { label: 'Meet the Team', href: 'https://www.psychedcbus.com/meet-the-provider' },
-          ].map(({ label, href }) => (
-            <a
+          {['Get Started Here', 'Insurances Accepted', 'Meet the Team'].map((label) => (
+            <span
               key={label}
-              href={href}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-800 hover:text-black border-b border-transparent hover:border-black transition"
+              className="text-gray-800"
               style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '18px', letterSpacing: '0.05em' }}
             >
               {label}
-            </a>
+            </span>
           ))}
         </nav>
       </header>
@@ -217,8 +210,8 @@ export default function ProviderPage() {
                 <p>Fax: 614-587-8882</p>
                 <p>
                   Email:{' '}
-                  <a href="mailto:admin@psychedcbus.com" className="underline hover:text-black">
-                    admin@psychedcbus.com
+                  <a href="mailto:sciotobussys@gmail.com" className="underline hover:text-black">
+                    sciotobussys@gmail.com
                   </a>
                 </p>
               </div>
@@ -286,25 +279,17 @@ export default function ProviderPage() {
       {/* Footer */}
       <footer className="bg-white border-t border-gray-200 py-10 px-6 text-center">
         <a
-          href="https://www.psychedcbus.com/get-started-here-contact"
-          target="_blank"
-          rel="noopener noreferrer"
+          href="mailto:sciotobussys@gmail.com"
           className="inline-block text-white font-semibold px-10 py-3 text-lg"
           style={{ backgroundColor: TEAL, borderRadius: '2px', fontFamily: "'Cormorant Garamond', serif", letterSpacing: '0.05em' }}
         >
           Let's Connect Now ›
         </a>
 
-        <div className="flex justify-center gap-6 mt-8 text-gray-500">
-          <a href="https://www.instagram.com/psychedcbus/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="hover:text-gray-900 transition">
-            <Instagram size={22} />
-          </a>
-          <a href="https://www.facebook.com/psychedcbus/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="hover:text-gray-900 transition">
-            <Facebook size={22} />
-          </a>
-          <a href="https://www.youtube.com/@psychedcbus" target="_blank" rel="noopener noreferrer" aria-label="YouTube" className="hover:text-gray-900 transition">
-            <Youtube size={22} />
-          </a>
+        <div className="flex justify-center gap-6 mt-8 text-gray-400">
+          <Instagram size={22} />
+          <Facebook size={22} />
+          <Youtube size={22} />
         </div>
 
         <p className="mt-6 text-gray-400 text-xs">
