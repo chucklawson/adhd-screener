@@ -104,6 +104,23 @@ export default function ScreenerResults({ result, onRetake }: ScreenerResultsPro
           </p>
         </div>
 
+        {/* Provider CTA */}
+        <div className="bg-white rounded-2xl shadow-md p-6 text-center">
+          <p className="text-sm text-gray-500 mb-1">Looking for a provider?</p>
+          <h2 className="text-lg font-bold text-gray-800 mb-2">Connect with Psyched</h2>
+          <p className="text-sm text-gray-600 mb-4">
+            Psyched specializes in functional medicine &amp; psychiatry for ADHD, anxiety, depression,
+            and hormonal concerns — from perinatal to postmenopause.
+          </p>
+          <Link
+            to="/provider/psyched"
+            className="inline-block bg-teal-600 text-white font-semibold px-8 py-3 rounded-full hover:bg-teal-700 transition text-sm"
+            style={{ backgroundColor: '#1895A9' }}
+          >
+            View Provider Profile →
+          </Link>
+        </div>
+
         {/* Actions */}
         <div className="flex flex-col sm:flex-row gap-3">
           <button

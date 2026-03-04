@@ -84,6 +84,13 @@ export default function LandingPage() {
       {/* Footer */}
       <footer className="bg-gray-800 text-gray-400 px-6 py-6 text-center text-sm mt-auto">
         <p>&copy; {new Date().getFullYear()} ADHD Screener &mdash; For informational use only.</p>
+        {/* TODO: remove before launch */}
+        <button
+          onClick={() => navigate('/provider/psyched')}
+          className="mt-3 text-xs text-gray-500 underline hover:text-gray-300 transition"
+        >
+          [dev] Provider Page
+        </button>
       </footer>
     </div>
   )
